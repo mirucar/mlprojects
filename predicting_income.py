@@ -26,6 +26,8 @@ forest = RandomForestClassifier(random_state = 1)
 
 forest.fit(train_data, train_labels)
 
+print(forest.feature_importances_)
+
 scores = forest.score(test_data, test_labels)
 print(scores)
 
